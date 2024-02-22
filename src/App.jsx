@@ -6,18 +6,23 @@ import Contact from "./pages/Contact";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { BrowserRouter } from "react-router-dom";
+import { useMediaQuery } from 'react-responsive'
 
 function App() {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 680px)'
+  })
+  
   return (
     <>
       <BrowserRouter>
-        <NavBar />
+        {isDesktopOrLaptop && <NavBar />}
         <main className="bg-primary tracking-tighter">
           <Home />
           <About />
           <Feature />
-          <Contact />
-          <Footer />
+          {isDesktopOrLaptop && <Contact />}
+          {isDesktopOrLaptop && <Footer />}
         </main>
       </BrowserRouter>
     </>

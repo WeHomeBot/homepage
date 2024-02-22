@@ -5,9 +5,9 @@ function NavBar() {
     <>
       <header className="w-full h-[80px]  pr-[100px] pl-[130px] flex justify-between items-center bg-primary z-10">
         <img
-          src="/images/Website_Logo.png"
+          src="https://cdn.wehomebot.com/resource/upload/6dqo2g2w/Square12@1x.png"
           alt="ARAL-KIDS Logo"
-          className="w-[80px] h-[80px]"
+          className="h-[80px]"
         />
         <div className=" w-[600px] flex justify-around items-center font-poppins font-semibold">
           <Link to={"#Home"} smooth>

@@ -9,16 +9,10 @@ function Home() {
         <div className="tablet:flex tablet:items-start tablet:justify-between">
           <div className=" tablet:w-[580px] tablet:ml-[130px] tablet:items-start flex flex-col items-center">
             <h1 className="tablet:text-[55px] tablet:text-left leading-[1.20] font-black text-eight text-[40px]">
-              <span className="text-sixth">A</span>ugmented
+              用 <span className="text-sixth">AI</span> 点亮
             </h1>
             <h1 className="tablet:text-[55px] tablet:text-left leading-[1.20] font-black text-eight text-[40px]">
-              <span className="text-fourth">R</span>eality
-            </h1>
-            <h1 className="tablet:text-[55px] tablet:text-left leading-[1.20] font-black text-eight text-[40px]">
-              <span className="text-fifth">A</span>ndroid-Based
-            </h1>
-            <h1 className="tablet:text-[55px] tablet:text-left leading-[1.20] font-black text-eight text-[40px]">
-              <span className="text-fourth">l</span>earning for
+              家庭学习的<span className="text-fourth">星空</span>
             </h1>
             <h1 className="tablet:text-[55px] tablet:text-left leading-[1.20] font-black text-seven text-[40px]">
               Kids
@@ -26,18 +20,17 @@ function Home() {
             <div className=" mobile:flex mobile:justify-around mobile:items-center">
               <button className="bg-fourth rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] mr-5">
                 <h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
-                  Download Now
+                  申请试用
                 </h1>
               </button>
-              <button className="bg-slate-50 rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] outline outline-1 outline-fifth">
+              {/* <button className="bg-slate-50 rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] outline outline-1 outline-fifth">
                 <h1 className="text-fifth font-bold tablet:text-[20px] text-[15px] px-[20px] tracking-tight">
                   Try it for Free
                 </h1>
-              </button>
+              </button> */}
             </div>
             <p className="tablet:text-[22px] text-[15px] font-medium mt-[20px] tablet:text-left text-center">
-              Ignite the power of technology by teaching kids <br /> using
-              Augmented Reality
+              Wehome，为家庭打造的 AI 教育工具
             </p>
           </div>
           <div
