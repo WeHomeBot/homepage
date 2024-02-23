@@ -1,5 +1,6 @@
 import React from "react";
 import { useMediaQuery } from 'react-responsive';
+import { HashLink as Link } from "react-router-hash-link";
 
 function Home() {
   const isDesktopOrLaptop = useMediaQuery({
@@ -25,9 +26,9 @@ function Home() {
             </h1>
             {isDesktopOrLaptop && <div className=" mobile:flex mobile:justify-around mobile:items-center">
               <button className="bg-fourth rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] mr-5">
-                <h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
+                <Link to={"#Contact"} smooth><h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
                   申请试用
-                </h1>
+                </h1></Link>
               </button>
               {/* <button className="bg-slate-50 rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] outline outline-1 outline-fifth">
                 <h1 className="text-fifth font-bold tablet:text-[20px] text-[15px] px-[20px] tracking-tight">
