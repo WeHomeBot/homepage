@@ -34,7 +34,7 @@ function Home() {
               </button> */}
             </div>}
             <p className="tablet:text-[22px] text-[15px] font-medium mt-[20px] tablet:text-left text-center">
-              Wehome，为家庭打造的 AI 教育工具
+              WeHome，为家庭打造的 AI 教育工具
             </p>
           </div>
           <div

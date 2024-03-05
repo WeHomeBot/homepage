@@ -24,12 +24,12 @@ function About() {
           />
         </div>
         <div className={isDesktopOrLaptop ? "font-poppins text-left max-w-[400px] max-h-[450px]" : "p-[20px] font-poppins text-left max-w-[400px] max-h-[450px]"}>
-          <h1 className="uppercase font-medium text-[20px]">关于 Wehome</h1>
+          <h1 className="uppercase font-medium text-[20px]">关于 WeHome</h1>
           <h1 className="font-bold text-[35px] leading-[1.2] break-before-auto mt-[20px]">
             通过目标，让孩子与家长探索、发现和共同成长
           </h1>
           <h1 className="font-medium text-[20px] text-slate-600 mt-[30px]">
-            在这个快速变化的世界中，家庭教育和孩子的成长过程比以往任何时候都更加重要。Wehome 是一款创新的家庭智能助手，旨在为家长和孩子提供一个共同学习和成长的工具
+            在这个快速变化的世界中，家庭教育和孩子的成长过程比以往任何时候都更加重要。WeHome 是一款创新的家庭智能助手，旨在为家长和孩子提供一个共同学习和成长的工具
           </h1>
           {isDesktopOrLaptop && <button className="w-[170px] h-[70px] bg-nine rounded-[17px] mt-[30px]">
             <h1 className="text-gray-900 text-[20px] font-bold tracking-tight px-[20px]">
