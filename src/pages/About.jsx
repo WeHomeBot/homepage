@@ -1,5 +1,6 @@
 import React from "react";
 import { useMediaQuery } from 'react-responsive';
+import { HashLink as Link } from "react-router-hash-link";
 
 function About() {
   const isDesktopOrLaptop = useMediaQuery({
@@ -32,9 +33,9 @@ function About() {
             在这个快速变化的世界中，家庭教育和孩子的成长过程比以往任何时候都更加重要。WeHome 是一款创新的家庭智能助手，旨在为家长和孩子提供一个共同学习和成长的工具
           </h1>
           {isDesktopOrLaptop && <button className="w-[170px] h-[70px] bg-nine rounded-[17px] mt-[30px]">
-            <h1 className="text-gray-900 text-[20px] font-bold tracking-tight px-[20px]">
+            <Link target="_blank" rel="noopener noreferrer" to={"https://dwxgds3r4b2.feishu.cn/share/base/form/shrcnOyr5CIS0PyE7bGzvbidNBg"} smooth><h1 className="text-gray-900 text-[20px] font-bold tracking-tight px-[20px]">
               了解更多
-            </h1>
+            </h1></Link>
           </button>}
         </div>
       </section>
