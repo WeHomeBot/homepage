@@ -11,16 +11,16 @@ function NavBar() {
         />
         <div className=" w-[600px] flex justify-around items-center font-poppins font-semibold">
           <Link to={"#Home"} smooth>
-            Home
+            首页
           </Link>
           <Link to={"#About"} smooth>
-            About
+            关于
           </Link>
           <Link to={"#Feature"} smooth>
-            Feature
+            特性
           </Link>
-          <Link to={"#Contact"} smooth>
-            Contact
+          <Link target="_blank" rel="noopener noreferrer" to={"https://dwxgds3r4b2.feishu.cn/share/base/form/shrcnOyr5CIS0PyE7bGzvbidNBg"} smooth>
+            试用申请
           </Link>
         </div>
       </header>

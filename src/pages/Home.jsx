@@ -23,7 +23,7 @@ function Home() {
             </h1>
             {isDesktopOrLaptop && <div className=" mobile:flex mobile:justify-around mobile:items-center">
               <button className="bg-fourth rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] mr-5">
-                <Link to={"#Contact"} smooth><h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
+                <Link target="_blank" rel="noopener noreferrer" to={"https://dwxgds3r4b2.feishu.cn/share/base/form/shrcnOyr5CIS0PyE7bGzvbidNBg"} smooth><h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
                   申请试用
                 </h1></Link>
               </button>

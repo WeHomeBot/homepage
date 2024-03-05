@@ -22,7 +22,7 @@ function App() {
           <Home />
           <About />
           <Feature />
-          {isDesktopOrLaptop && <Contact />}
+          {/* {isDesktopOrLaptop && <Contact />} */}
           <Footer />
         </main>
       </BrowserRouter>
