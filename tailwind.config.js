@@ -20,7 +20,7 @@ export default {
     },
     screens: {
       mobile: "414px",
-      tablet: "601px",
+      tablet: "680px",
       desktop: "1280px",
     },
   },

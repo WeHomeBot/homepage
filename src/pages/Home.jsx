@@ -21,7 +21,7 @@ function Home() {
             <h1 className="tablet:text-[55px] tablet:text-left leading-[1.20] font-black text-eight text-[40px]">
               家庭学习的<span className="text-fourth">星空</span>
             </h1>
-            {isDesktopOrLaptop && <div className=" mobile:flex mobile:justify-around mobile:items-center">
+            <div className=" mobile:flex mobile:justify-around mobile:items-center">
               <button className="bg-fourth rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] mr-5">
                 <Link target="_blank" rel="noopener noreferrer" to={"https://dwxgds3r4b2.feishu.cn/share/base/form/shrcnOyr5CIS0PyE7bGzvbidNBg"} smooth><h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
                   申请试用
@@ -32,7 +32,7 @@ function Home() {
                   Try it for Free
                 </h1>
               </button> */}
-            </div>}
+            </div>
             <p className="tablet:text-[22px] text-[15px] font-medium mt-[20px] tablet:text-left text-center">
               WeHome，为家庭打造的 AI 教育工具
             </p>
@@ -46,6 +46,7 @@ function Home() {
               src="https://cdn.wehomebot.com/resource/upload/SRROEh92/first2-j72kq5oa0m.png"
               alt=""
               className="tablet:w-[611px] tablet:h-[434px] w-[300px] h-[200px]"
+              style={{height:"auto"}}
             />
           </div>
         </div>
