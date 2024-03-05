@@ -21,9 +21,6 @@ function Home() {
             <h1 className="tablet:text-[55px] tablet:text-left leading-[1.20] font-black text-eight text-[40px]">
               家庭学习的<span className="text-fourth">星空</span>
             </h1>
-            <h1 className="tablet:text-[55px] tablet:text-left leading-[1.20] font-black text-seven text-[40px]">
-              Kids
-            </h1>
             {isDesktopOrLaptop && <div className=" mobile:flex mobile:justify-around mobile:items-center">
               <button className="bg-fourth rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] mr-5">
                 <Link to={"#Contact"} smooth><h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
