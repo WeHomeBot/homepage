@@ -8,7 +8,7 @@ export const feature = [
   },
   {
     id: 2,
-    title: "个性化学",
+    title: "个性化学习",
     description: "每个孩子都是独一无二的，他们的学习需求和速度也各不相同。通过设立学习目标，AI 助手会根据这些目标自动分解计划，并引导孩子一步步完成学习目标。",
     image: "/images/AR Icon 3.png",
   },
