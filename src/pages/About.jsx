@@ -18,7 +18,7 @@ function About() {
           data-aos-duration="1500"
         >
           <img
-            src="/images/About Image.png"
+            src="https://cdn.wehomebot.com/resource/upload/zRDgmTKr/second2-8iaxco16n8o.png"
             alt="About Image"
             className="max-w-[500px] max-h-[425px] w-[80%]"
           />

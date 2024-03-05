@@ -43,7 +43,7 @@ function Home() {
             data-aos-duration="1500"
           >
             <img
-              src="/images/UI_Screenshot.png"
+              src="https://cdn.wehomebot.com/resource/upload/SRROEh92/first2-j72kq5oa0m.png"
               alt=""
               className="tablet:w-[611px] tablet:h-[434px] w-[300px] h-[200px]"
             />
