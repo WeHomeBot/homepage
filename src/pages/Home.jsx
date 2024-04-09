@@ -8,6 +8,7 @@ function Home() {
 
   const formRef = useRef(null);
   const inviteRef = useRef(null);
+  const inviteCode = useRef(localStorage.getItem("inviteCode"));
 
   function handleClick(e) {
     if(inviteRef.current.value){
@@ -15,7 +16,13 @@ function Home() {
       formRef.current.action = `https://home.bearbobo.com/login`;
       formRef.current.method = 'GET';
       formRef.current.submit();
+      localStorage.setItem("inviteCode", inviteRef.current.value);
+      inviteCode.current = inviteRef.current.value;
     }
+  }
+
+  function handleClick2() {
+    location.href = `https://home.bearbobo.com/login?inviteCode=${inviteCode.current}`;
   }
 
   return (
@@ -33,14 +40,20 @@ function Home() {
               家庭学习的<span className="text-fourth">星空</span>
             </h1>
             <div className=" mobile:flex mobile:justify-around mobile:items-center mt-5">
-              <form ref={formRef}>
+              {
+                !inviteCode.current?<form ref={formRef}>
                 <input name="inviteCode" type="text" placeholder="输入邀请码" required ref={inviteRef} className="rounded-lg p-2 mr-2"></input>
                 <button className="bg-fourth rounded-[17px] mt-[5px] px-[10px] py-[5px] mr-5" onClick={handleClick}>
                   <h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
                     试用
                   </h1>
                 </button>
-              </form>
+                </form>:<button className="bg-fourth rounded-[17px] mt-[5px] px-[10px] py-[5px] mr-5" onClick={handleClick2}>
+                  <h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
+                    进入
+                  </h1>
+                </button>
+              }
               {/* <button className="bg-slate-50 rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] outline outline-1 outline-fifth">
                 <h1 className="text-fifth font-bold tablet:text-[20px] text-[15px] px-[20px] tracking-tight">
                   Try it for Free
