@@ -1,11 +1,22 @@
-import React from "react";
+import React, {useRef} from "react";
 import { useMediaQuery } from 'react-responsive';
-import { HashLink as Link } from "react-router-hash-link";
 
 function Home() {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 680px)'
   });
+
+  const formRef = useRef(null);
+  const inviteRef = useRef(null);
+
+  function handleClick(e) {
+    if(inviteRef.current.value){
+      e.preventDefault();
+      formRef.current.action = `https://home.bearbobo.com/login`;
+      formRef.current.method = 'GET';
+      formRef.current.submit();
+    }
+  }
 
   return (
     <>
@@ -21,12 +32,15 @@ function Home() {
             <h1 className="tablet:text-[55px] tablet:text-left leading-[1.20] font-black text-eight text-[40px]">
               家庭学习的<span className="text-fourth">星空</span>
             </h1>
-            <div className=" mobile:flex mobile:justify-around mobile:items-center">
-              <button className="bg-fourth rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] mr-5">
-                <Link target="_blank" rel="noopener noreferrer" to={"https://dwxgds3r4b2.feishu.cn/share/base/form/shrcnOyr5CIS0PyE7bGzvbidNBg"} smooth><h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
-                  申请试用
-                </h1></Link>
-              </button>
+            <div className=" mobile:flex mobile:justify-around mobile:items-center mt-5">
+              <form ref={formRef}>
+                <input name="inviteCode" type="text" placeholder="输入邀请码" required ref={inviteRef} className="rounded-lg p-2 mr-2"></input>
+                <button className="bg-fourth rounded-[17px] mt-[5px] px-[10px] py-[5px] mr-5" onClick={handleClick}>
+                  <h1 className="text-slate-200 font-bold tablet:text-[19px] text-[15px] tracking-tight px-[20px]">
+                    试用
+                  </h1>
+                </button>
+              </form>
               {/* <button className="bg-slate-50 rounded-[17px] mt-[15px] px-[10px] py-[5px] tablet:h-[60px] tablet::w-[200px] outline outline-1 outline-fifth">
                 <h1 className="text-fifth font-bold tablet:text-[20px] text-[15px] px-[20px] tracking-tight">
                   Try it for Free

@@ -26,9 +26,6 @@ function NavBar() {
           <Link to={"#Feature"} smooth>
             特性
           </Link>
-          <Link target="_blank" rel="noopener noreferrer" to={"https://dwxgds3r4b2.feishu.cn/share/base/form/shrcnOyr5CIS0PyE7bGzvbidNBg"} smooth>
-            申请试用
-          </Link>
         </div>}
       </header>
     </>

@@ -23,9 +23,6 @@ function Footer() {
               <Link to={"#Feature"} smooth>
                 特性
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" to={"https://dwxgds3r4b2.feishu.cn/share/base/form/shrcnOyr5CIS0PyE7bGzvbidNBg"} smooth>
-                申请试用
-              </Link>
             </div>
           </div>}
           {/* <div className="flex items-center justify-around w-[200px] pb-[20px]">
