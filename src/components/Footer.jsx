@@ -36,9 +36,9 @@ function Footer() {
           </div> */}
         </div>
         <div className=" h-[80px] flex items-center justify-center">
-          <h1 className="text-[20px] font-normal pt-[20px]">
+          <h1 className="text-[16px] font-normal pt-[20px]">
             {" "}
-            © Copyright 2024 , All Rights Reserved ｜ <a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer">京ICP备2024060726号-1</a>
+            {isDesktopOrLaptop && '© Copyright 2024 , All Rights Reserved ｜ '}<a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer">京ICP备2024060726号-1</a>
           </h1>
         </div>
       </section>
