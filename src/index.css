@@ -2,3 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.important {
+  font-weight: bold;
+}
+.more {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.more h1 {
+  color: #333;
+}
+.more h2 {
+  color: #666;
+}
+.more p, .more li {
+  color: #333;
+  line-height: 1.6;
+}

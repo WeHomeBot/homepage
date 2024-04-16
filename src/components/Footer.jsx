@@ -35,10 +35,15 @@ function Footer() {
             ))}
           </div> */}
         </div>
-        <div className=" h-[80px] flex items-center justify-center">
-          <h1 className="text-[16px] font-normal pt-[20px]">
+        <div className=" h-[100px] items-center">
+          <h1 className="text-[16px] font-normal pt-[20px] text-center">
             {" "}
             {isDesktopOrLaptop && '© Copyright 2024 , All Rights Reserved ｜ '}<a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer">京ICP备2024060726号-1</a>
+          </h1>
+          <h1 className="text-[16px] font-normal pt-[10px] text-center">
+            <a href="terms.html" target="_blank" rel="noreferrer">用户协议</a>
+            <a href="privacy.html" target="_blank" rel="noreferrer">｜ 隐私政策</a>
+            <a href="https://bearbobo.feishu.cn/wiki/JbKYwSsNwiLlrjkmmw5cTwlAnjX" target="_blank" rel="noreferrer">｜ 用户社区</a>
           </h1>
         </div>
       </section>
