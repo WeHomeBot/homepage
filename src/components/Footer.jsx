@@ -10,7 +10,7 @@ function Footer() {
 
   return (
     <>
-      <section className="bg-third w-full px-[100px] font-poppins">
+      <section className="bg-third w-full px-[60px] font-poppins">
         <div className="border-y-2 border-slate-900 flex flex-col items-center">
         {isDesktopOrLaptop && <div className="flex  justify-between items-center px-[100px] pb-[20px]">
             <div className=" w-[600px] pt-[20px] flex justify-around items-center font-medium text-[20px]">
