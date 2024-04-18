@@ -11,7 +11,7 @@ function NavBar() {
     <>
       <header className={`w-full h-[80px]  ${isDesktopOrLaptop && 'pr-[100px] pl-[130px]'} flex justify-between items-center bg-primary z-10`}>
         <img
-          src="https://cdn.wehomebot.com/resource/upload/JEcdDR0U/bearbobo-logo-p74ezubebz.png"
+          src="https://cdn.bearbobo.com/resource/upload/JEcdDR0U/bearbobo-logo-p74ezubebz.png"
           alt="WeHome Logo"
           className={`h-[80px]  ${!isDesktopOrLaptop && 'm-auto'}`}
         />

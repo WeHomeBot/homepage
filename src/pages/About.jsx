@@ -19,7 +19,7 @@ function About() {
           data-aos-duration="1500"
         >
           <img
-            src="https://cdn.wehomebot.com/resource/upload/BcLBbfeM/sc02-699r5s8evq.png"
+            src="https://cdn.bearbobo.com/resource/upload/BcLBbfeM/sc02-699r5s8evq.png"
             alt="About Image"
             className="max-w-[500px] max-h-[425px] w-[80%]"
           />
