@@ -32,6 +32,6 @@ jobs:
         cache-dependency-path: 'pnpm-lock.yaml'
     - run: pnpm i
     - run: pnpm build
-    - run: chmod 600 ./scripts/.ssh/aws-hk-t3-medium.pem
+    - run: chmod 600 ./scripts/.ssh/ecs.u1-c1m2.large.pem
     - name: Deploy to Prod
       run: pnpm run deploy:ali
