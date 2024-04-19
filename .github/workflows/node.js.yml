@@ -33,5 +33,5 @@ jobs:
     - run: pnpm i
     - run: pnpm build
     - run: chmod 600 ./scripts/.ssh/aws-hk-t3-medium.pem
-    - name: Deploy to Sandbox
-      run: pnpm run deploy:prod
+    - name: Deploy to Prod
+      run: pnpm run deploy:ali
