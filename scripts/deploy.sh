@@ -5,17 +5,13 @@
 # ./scripts/deploy.sh prod - Deploy to production server
 
 # Variables
-# t3.small
-dev_server_address=ec2-16-163-105-49.ap-east-1.compute.amazonaws.com
-dev_private_key_path=./scripts/.ssh/aws-hk-t3-medium.pem
+# ali ecs test
+dev_server_address=8.138.149.180
+dev_private_key_path=./scripts/.ssh/ecs.u1-c1m2.large.pem
 
-# t3.medium
-prod_server_address=ec2-18-162-152-97.ap-east-1.compute.amazonaws.com
-prod_private_key_path=./scripts/.ssh/aws-hk-t3-medium.pem
-
-# ali ecs 
-ali_server_address=8.134.79.99
-ali_private_key_path=./scripts/.ssh/ecs.u1-c1m2.large.pem
+# ali ecs prod
+prod_server_address=8.134.79.99
+prod_private_key_path=./scripts/.ssh/ecs.u1-c1m2.large.pem
 
 dist_path=dist
 server_user=ubuntu
@@ -30,9 +26,6 @@ if [ "$1" == "dev" ]; then
 elif [ "$1" == "prod" ]; then
   server_address=$prod_server_address
   private_key_path=$prod_private_key_path
-elif [ "$1" == "ali" ]; then
-  server_address=$ali_server_address
-  private_key_path=$ali_private_key_path
 else
   echo "Invalid environment"
   exit 1

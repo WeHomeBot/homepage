@@ -9,8 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "deploy:dev": "./scripts/deploy.sh dev",
-    "deploy:prod": "./scripts/deploy.sh prod",
-    "deploy:ali": "./scripts/deploy.sh ali"
+    "deploy:prod": "./scripts/deploy.sh prod"
   },
   "dependencies": {
     "aos": "^2.3.4",
